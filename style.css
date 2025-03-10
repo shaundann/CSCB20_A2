@@ -4,10 +4,22 @@ body {
     padding: 0;
   }
 
+.info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.info1 {
+  grid-template-columns:1 ;
+}
+
+.info2 {
+  grid-template-columns: 2;
+}
 .grid-home {
     margin-left: 200px;
     display: grid;
-    grid-template-columns: 1 fr; /* Creates three equal columns */
+    grid-template-columns: 1 fr; 
     grid-gap: 10px;
 }
 .grid-home .welcome {
