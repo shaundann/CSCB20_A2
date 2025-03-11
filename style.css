@@ -1,12 +1,20 @@
 body {
     font-family: Arial, sans-serif;
+    height: 100%;
     margin: 0;
     padding: 0;
     color: white;
   }
 
+.container {
+    display: grid;
+    grid-template-rows: 1fr auto; /* Main content takes available space, footer takes its natural height */
+    min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+ }
+
 .intro {
     margin: 5%;
+    margin-bottom: 25%;
     padding-top: 2%;
     padding-bottom: 3%;
     border-style: solid;
@@ -14,7 +22,6 @@ body {
     border-color: black;
     background-color: midnightblue;
 }
-
 
 .infogrid {
     display: grid;
@@ -37,6 +44,7 @@ body {
     margin-left: 150px;
     display: grid;
     grid-template-columns: 1 fr; 
+    height: 100%;
 }
 
 .welcome {
@@ -85,6 +93,7 @@ body {
     position: sticky;
     top: 0;
     max-width: 100%;
+    max-height: 20%;
     margin-left: 180px;
     margin-right: 20px;
     margin-top: 0;
@@ -104,7 +113,7 @@ body {
     padding: 10px 0;
     z-index: 2;
     margin-left: 150px;
-    padding: 3%;
+    padding: 10px 0;
     
 }  
 
