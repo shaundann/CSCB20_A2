@@ -6,11 +6,20 @@ body {
     color: white;
   }
 
+.margin {
+    margin-left: 150px;
+}
+
 .container {
     display: grid;
-    grid-template-rows: 1fr auto; /* Main content takes available space, footer takes its natural height */
-    min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+    grid-template-rows: 1fr auto; 
+    min-height: 100vh;
  }
+
+ .container3 {
+  display: grid;
+  grid-template-rows: 1fr auto; 
+}
 
 .intro {
     margin: 3%;
@@ -24,11 +33,9 @@ body {
 .piazza{
   width: 100%;
   min-height: 600px;
-
 }
 .container2 {
     margin: 3%;
-    margin-bottom: 25%;
     padding-top: 2%;
     padding-bottom: 3%;
     border-style: solid;
@@ -36,6 +43,8 @@ body {
     border-color: black;
     background-color: midnightblue;
 }
+
+ 
 .infogrid {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -53,11 +62,40 @@ body {
 .info2 {
     grid-template-columns: 2;
 }
+
 .grid-home {
-    margin-left: 150px;
     display: grid;
     grid-template-columns: 1 fr; 
     height: 100%;
+}
+
+.grid-lab {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    margin: 3%;
+    background-color: cornflowerblue;
+    color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
+
+.labitem {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 1em;
+}
+
+.lablink {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 16px;
+    font-size: 1em;
+}
+
+.lablink:hover {
+    color: red;
 }
 
 .welcome {
@@ -79,6 +117,7 @@ body {
     margin-left: 8%;
     grid-column: 1;
     text-align: left;
+    text-decoration: underline;
 }
 
 .hometext {
@@ -105,9 +144,9 @@ body {
 .header {
     position: sticky;
     top: 0;
+    margin-left: 20px;
     max-width: 100%;
     max-height: 40%;
-    margin-left: 180px;
     margin-right: 20px;
     margin-top: 0;
     padding-top: 20px;
@@ -125,7 +164,6 @@ body {
     color: #fff;
     padding: 10px 0;
     z-index: 2;
-    margin-left: 150px;
     padding: 10px 0;
     
 }  
