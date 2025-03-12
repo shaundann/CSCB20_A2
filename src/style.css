@@ -4,10 +4,10 @@
   --text-color: #333;
   --header-bg: linear-gradient(135deg, #1e3c72, #2a5298);
   --nav-bg: linear-gradient(180deg, #1e3c72, #2a5298);
-  --intro-bg: #ffffff;
+  --container-bg: #ffffff;
   --welcome-bg: #2a5298;
   --footer-bg: #1e3c72;
-  --link-color: #2a5298;
+  --link-color: #7094d2;
   --link-hover-color: #ff6b6b;
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   --text-white: #fff;
@@ -20,7 +20,7 @@
     --text-color: #e0e0e0;
     --header-bg: linear-gradient(135deg, #0a1a3a, #1e3c72);
     --nav-bg: linear-gradient(180deg, #0a1a3a, #1e3c72);
-    --intro-bg: #2a2a2a;
+    --container-bg: #2a2a2a;
     --welcome-bg: #1e3c72;
     --footer-bg: #0a1a3a;
     --link-color: #87ceeb;
@@ -199,17 +199,18 @@ textarea {
   font-weight: 300;
 }
 
-.intro {
+.container {
   margin: 0;
+  margin-top: 3%;
   padding: 25px;
-  background-color: var(--intro-bg);
+  background-color: var(--container-bg);
   color: var(--text-color);
   border-radius: 12px;
   box-shadow: var(--shadow);
   transition: transform 0.3s ease;
 }
 
-.intro:hover {
+.container:hover {
   transform: translateY(-3px);
 }
 
@@ -300,14 +301,15 @@ footer {
 
 .grid-assignment {
   display: grid;
-  grid-template-columns: 4% 10% 10% auto 53% auto;
+  grid-template-columns: 4% 15% 15% auto auto auto;
   gap: 1px;
   margin: 3%;
-  background-color: cornflowerblue;
-  color: white;
+  color: black;
   border-style: solid;
   border-width: 3px;
+  border-radius: 25px;
   border-color: black;
+  font-size: clamp(0.7em, 1.5vw, 1em);
 }
 
 .grid-lab {
@@ -315,24 +317,24 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   margin: 3%;
-  background-color: cornflowerblue;
-  color: white;
+  color: black;
   border-style: solid;
   border-width: 3px;
+  border-radius: 25px;
   border-color: black;
+  text-align: center;
+  font-size: clamp(0.7em, 1.5vw, 1em);
 }
 
-.labitem {
-  margin-left: 20%;
-  margin-right: 20%;
-  font-size: 1em;
+.labitem, .lablink {
+  display: block;
+  padding: 8px;
+  font-size: inherit;
+  line-height: normal;
 }
 
 .lablink {
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 16px;
-  font-size: 1em;
+  display: inline-block;
 }
 
 .lablink:hover {
@@ -366,8 +368,23 @@ footer {
     padding: 12px 20px;
   }
 
-  .intro {
+  .container {
     padding: 20px;
+  }
+
+  .grid-assignment {
+    font-size: 0.6em; 
+    padding: 5px; 
+  }
+
+  .grid-lab{
+    font-size: 0.5em;
+    padding: 5px;
+  }
+
+  .labitem, .lablink {
+    padding: 5px;
+    font-size: 0.9em;
   }
 }
 
@@ -389,3 +406,5 @@ footer {
     font-size: 1.3em;
   }
 }
+
+
