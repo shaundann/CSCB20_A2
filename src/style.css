@@ -299,13 +299,13 @@ footer {
 
 .grid-assignment {
   display: grid;
-  grid-template-columns: 5% 10% 20% 10% 45% 10%; /* Balanced column widths */
+  grid-template-columns: 5% 10% 20% 10% 45% 10%;
   gap: 1px;
   margin: 3%;
-  background-color: var(--intro-bg); /* Consistent with theme */
-  border: 2px solid var(--welcome-bg); /* Subtle border */
+  background-color: var(--intro-bg);
+  border: 2px solid var(--welcome-bg);
   border-radius: 8px;
-  overflow: hidden; /* Prevents overflow */
+  overflow: hidden;
 }
 
 .grid-lab {
@@ -323,11 +323,11 @@ footer {
 }
 
 .labitem {
-  padding: 15px; /* Increased padding for readability */
-  text-align: center; /* Centered text */
+  padding: 15px;
+  text-align: center;
   font-size: 1em;
-  background-color: var(--bg-color); /* Matches body background */
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Light separator */
+  background-color: var(--bg-color);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -335,7 +335,7 @@ footer {
 }
 
 .grid-assignment .labitem:nth-child(-n+6) {
-  background-color: var(--welcome-bg); /* Header background */
+  background-color: var(--welcome-bg);
   color: var(--text-white);
   font-weight: 600;
   font-size: 1.1em;
@@ -343,14 +343,14 @@ footer {
 }
 
 .lablink {
-  padding: 15px; /* Match labitem padding */
+  padding: 15px;
   text-align: center;
   font-size: 1em;
   color: var(--link-color);
   text-decoration: none;
   font-weight: 400;
-  background-color: var(--bg-color); /* Matches body background */
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Light separator */
+  background-color: var(--bg-color);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -358,7 +358,7 @@ footer {
 }
 
 .lablink:hover {
-  color: var(--link-hover-color); /* Consistent hover color */
+  color: var(--link-hover-color);
 }
 
 /* Mobile Responsiveness */
@@ -393,19 +393,19 @@ footer {
   }
 
   .grid-assignment {
-    grid-template-columns: 1fr; /* Stack columns on small screens */
+    grid-template-columns: 1fr;
   }
 
   .labitem,
   .lablink {
-    text-align: left; /* Left-align for stacked layout */
+    text-align: left;
     padding: 10px;
   }
 
   .grid-assignment .labitem:nth-child(-n+6),
   .labitem:not(:first-child),
   .lablink:not(:first-child) {
-    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Separators for stacked layout */
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
 
