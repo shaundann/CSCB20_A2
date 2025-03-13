@@ -1,0 +1,1 @@
+As a student who want to upload our assignment without typing the address of the website in the browser, I can just click the navigation bar.

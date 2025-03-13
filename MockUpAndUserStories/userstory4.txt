@@ -1,0 +1,1 @@
+As a teaching assistant, I want to know what material I should teach my students and have timelines for all sessions by clicking on Labs navigation section.

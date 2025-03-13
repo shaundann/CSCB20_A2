@@ -1,0 +1,1 @@
+As a student, I want to know the time and place of the tests to prepare for them as early as possible, by clicking the navigation bar about tests.

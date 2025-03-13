@@ -1,0 +1,1 @@
+As a student, I want to click on syllabus navigation bar, so that I can view the entire syllabus in embedded website page.

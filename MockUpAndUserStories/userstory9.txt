@@ -1,0 +1,1 @@
+As a journalist, I want to have access to contact information by clicking the Course Team button in the navigation bar to talk about the course design.
